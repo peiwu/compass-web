@@ -1,0 +1,71 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+         http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<display-name>compass</display-name>
+
+	<!-- spring服务层的配置文件 -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath*:spring/*.xml</param-value>
+	</context-param>
+
+	<!-- spring容器启动监听器 -->
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<!-- Spring 刷新Introspector防止内存泄露 -->
+	<listener>
+		<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
+	</listener>
+    <!-- Session监听器-->
+    <listener>     
+          <listener-class>     
+              com.iflytek.voicecloud.compass.interceptor.SessionListener   
+           </listener-class>     
+    </listener>    
+    
+    <servlet>
+        <servlet-name>websocket</servlet-name>
+        <servlet-class>com.iflytek.voicecloud.compass.ws.MyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+		<servlet-name>websocket</servlet-name>
+		<url-pattern>/websocket</url-pattern>
+	</servlet-mapping>
+    
+	
+	<servlet>
+		<servlet-name>spring</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>spring</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+	<!-- 将当前的应用root设置到系统变量中 -->
+	<context-param>
+		<param-name>webAppRootKey</param-name>
+		<param-value>webApp.root</param-value>
+	</context-param>
+    <context-param>
+    <param-name>log4jConfigLocation</param-name>
+    <param-value>classpath:log4j.properties</param-value>
+    </context-param>
+	<listener>
+		<listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+	</listener>
+	
+<servlet>
+  <servlet-name>Log4jInit</servlet-name>
+  <servlet-class>com.iflytek.voicecloud.compass.common.Log4jInit</servlet-class>
+  <init-param>
+   <param-name>log4j</param-name>
+   <param-value>/WEB-INF/classes/log4j.properties</param-value>
+   <!--  <param-value>log4j.properties</param-value>-->
+  </init-param>
+ </servlet>
+</web-app>

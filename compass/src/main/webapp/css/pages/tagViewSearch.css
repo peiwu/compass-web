@@ -1,0 +1,304 @@
+
+body,html,.container{
+	min-width: 1200px;
+	height: 100%;
+}
+
+
+/* 单选按钮 */
+.choose{
+	opacity:0; 
+	display:inline-block;
+}
+.radio-label{
+	background-image: url(../img/no-choose.png);
+	background-repeat: no-repeat;
+	width:17px;
+	height:17px;
+	padding-left:20px;
+}
+.choose:checked+.radio-label{
+	background-image: url(../img/choose.png);
+	background-repeat: no-repeat;
+	width:17px;
+	height:17px;
+	padding-left:20px;
+}
+
+
+/* view-search-content */
+.view-search-content{
+	/*width:1150px;*/
+	width:1200px;
+	position:relative;
+	left:50%;
+	margin-left:-575px;
+	margin-top:90px;
+	margin-bottom:100px;
+}
+
+.each-result-wrapper{	
+	margin-bottom:50px;
+	/*width:1150px;*/
+	width:1200px;
+	background-color: #f6f6f6;
+	border-bottom:2px solid #ebebeb;
+	height:100%;
+}
+
+/* child class */
+.child-class-view{
+	position:relative;
+	float: left;
+	width: 100px;
+	padding: 20px 15px;
+}
+.child-icon{
+	position:absolute;
+	top:20px;
+	left:15px;
+	display: inline-block;
+	height: 22px;
+	width: 32px;
+	background-image: url(../img/card.png);
+	background-position:center;
+}
+.child-class-name{
+	display: inline-block;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	color: #666666;
+	padding-left: 10px;
+	width:58px;
+	margin-left:32px;
+}
+.child-class-stat{
+	font-family: "微软雅黑";
+	font-size: 44.24px;
+	color: #18b0c3;
+	padding-top: 21px;
+}
+.child-hint-msg{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #999999;
+	padding-top: 10px;
+}
+.child-class-desc{
+	font-family: "微软雅黑";
+	font-size: 15px;
+	color: #999999;
+	padding-top: 10px;
+}
+
+/* 一个二级分类与所有标签分割线 */
+.child-tag-split{
+	float: left;
+  	width: 1px;
+    background: #cbcbcb;
+    margin-top:20px;
+     margin-bottom:20px;
+}  
+
+
+/* tag */
+.tag-view{
+	float:left;
+	width: 990px;
+	margin-left:20px;
+}
+.each-tag-view{
+	position:relative;
+	width:100%;
+	height: 60px;
+	line-height: 60px;
+	vertical-align: middle;
+}
+.each-tag-view span{
+	display:inline-block;
+}
+
+.name{
+	width:19%;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis; 
+	overflow:hidden;
+}	
+.tag-msg-icon{
+	position:relative;
+	top:-20px;
+	left:-25px;  
+	height: 12px;
+	width: 12px;
+	background-image: url(../img/show-msg.png);
+	background-repeat: no-repeat;
+}
+.totlePop{
+	width:28%;	
+	text-align:left;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis; 
+	overflow:hidden;
+}
+.updateSpan{
+	width:19%;	
+	text-align:center;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis; 
+	overflow:hidden;
+}
+.updateTime{
+	width:20%;	
+	text-align:center;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis; 
+	overflow:hidden;
+}
+.updateGra{
+	width:12%;	
+	text-align:center;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis; 
+	overflow:hidden;
+}
+.light{
+	color: #999999;
+}
+.middle{
+	color: #666666;
+}
+.deep{
+	color: #333333;
+}
+ .icon{
+ 	vertical-align: middle;
+ } 
+ 		/* name  */
+ .name{
+ 	padding-left:5px;
+ }
+ .descid-hint-msg{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:12px;
+	text-align:left;
+	line-height:12px;
+	color:#666;
+}
+.tag-icon{
+	padding-right:5px;
+	height: 33px;
+	width: 19px;
+	background-image: url(../img/tag.png);
+	background-repeat: no-repeat;
+}
+.tag-name{
+	font-size:18px;
+	color:#666;
+}
+.tag-totalPop{
+	font-family: 微软雅黑;
+	font-size:20px;
+/* 	padding-right:5px; */
+	width: 120px;
+	color:#18b0c3;
+	text-align:right;
+}
+.tag-hint-msg,.tag-updateGra,.tag-updateSpan,.tag-latestUpdateTime{
+	font-size:12px;
+}
+		/* updateGran */
+.updateGra-icon{
+	padding-right:5px;
+	height: 22px;
+	width: 23px;
+	background-image: url(../img/star.png);
+	background-repeat: no-repeat;
+}
+
+.updateSpan-icon{
+	padding-right:5px;
+	height: 19px;
+	width: 23px;
+	background-image: url(../img/calendar.png);
+	background-repeat: no-repeat;
+}
+.updateTime-icon{
+	padding-right:5px;
+	height: 22px;
+	width: 22px;
+	background-image: url(../img/clock.png);
+	background-repeat: no-repeat;
+}
+
+/* .show-chart{
+    position:absolute;
+    bottom:0px;
+    right:0px;
+	display: inline-block;
+	height: 18px;
+	width: 22px;
+	background-image: url(../img/show-chart.png);
+	background-repeat: no-repeat;
+} */
+.hide-chart{
+	position: absolute;
+	bottom:5px;
+	right: -30px;
+	display: inline-block;
+	height: 18px;
+	width: 22px;
+	background-image: url(../img/hide-chart.png);
+	background-repeat: no-repeat;
+}
+
+.tag-split{
+	border: none;
+	border-top: 1px dashed #bdbdbd;
+	width:98%;
+}
+
+/* 标签id，描述，显示 */
+.descid-hint-msg{
+	display:none; 
+	width:280px;
+	background:#000;
+	opacity:0.6;
+	filter:alpha(opacity=60);
+	position: absolute;
+	left: 50px;
+	top: 30px;
+	z-index: 1000;	
+	border-radius:2px;
+}
+.descid-hint-msg p{
+	color:#18b0c3;
+	font-size:14px;
+	padding-left:15px;
+	line-height:25px;
+}
+ .tag-id,.tag-desc{
+	color:#eee;
+	font-size:14px;
+} 	
+
+
+
+/* 折线图 */
+
+.tag-linechart{
+
+} 
+
+.no-result{
+	width:140px;
+	margin:0px auto;
+	padding-top:100px;
+	font-size:20px;
+}

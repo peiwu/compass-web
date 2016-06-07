@@ -1,0 +1,79 @@
+html,body,welcome-container{
+	width:100%;
+	height: 100%;
+	min-width: 1200px;
+	position:relative;
+	min-height:780px;
+}
+body{
+	background-image: url(../img/welcome-bg.png); 
+	background-repeat: repeat-x;
+	background-position:bottom;
+}
+
+#welcome-content{
+	width:742px;
+	height: 625px;
+	position:absolute;
+	bottom:60px;
+	left:50%;
+	margin-left:-630px;
+}
+
+#word-btn-div{
+	width:610px;
+	height:250px;
+	position:absolute;
+	bottom:180px;
+	left:550px;
+}
+
+#welcome-btn-group{
+	width:610px;
+	height:250px;
+	position:absolute;
+	top:180px;
+	left:50px;
+}
+#welcome-word{
+	width:600px;
+	margin-left:50px;
+	margin-bottom:50px;
+}
+.line1{
+	font-size:48px;
+	font-family:"微软雅黑";
+	padding-bottom:25px;
+	
+}
+#welcome-in{
+	color:#8d8d8d;
+}
+#welcome-in-tag{
+	color:#25adbf;
+}
+.line2{
+	font-size:32px;
+	font-family:"微软雅黑";
+	color:#8d8d8d;
+	position:relative;
+	left:70px;
+}
+#dongcha{
+	position:relative;
+	left:45px;
+}
+.welcomt-btn{
+	display:inline-block;
+	width:253px;
+	height:87px;
+}
+.welcome-admin-btn{
+	background-image: url(../img/welcome-admin-btn.png);
+	background-repeat: no-repeat;
+}
+.welcome-view-btn{
+	margin-left:15px;
+	background-image: url(../img/welcome-view-btn.png);
+	background-repeat: no-repeat;
+}

@@ -1,0 +1,141 @@
+html,body{
+	margin:0px 0px;
+	padding:0px 0px;
+	width:100%;
+	height:100%;
+	min-width:1200px;
+}
+
+.container{
+	width:100%;
+	height:100%;
+	min-width:1200px;
+}
+#login-header{	
+	font-size:0;
+	width:100%;
+	height:306px;
+	min-width:1200px;
+	background:#23b7c8; 
+	background-image:url(../img/login-bg2.png);
+	background-repeat:no-repeat;
+	background-position:50% 100%;
+	
+	/* border-bottom:1px solid #05699a;  */
+	
+}
+#login-form{
+	margin:57px auto;
+	width:500px;
+	height:233px;
+}
+.username-div{
+	width:500px;
+	height:53px;
+}
+.password-div{
+	margin-top:27px;
+	width:500px;
+	height:53px;
+}
+.btn-div{
+	margin-top:48px;
+	width:168px;
+	height:52px;
+}
+#username-label,#password-label{
+	font-size:24px;
+	color:#707070;
+	padding-right:24px;
+}
+
+#username-bg{
+	display:inline-block;
+	background-image:url(../img/username-input.png);
+	background-repeat: no-repeat;
+	width:355px;
+	height:55px; 
+}
+#username{
+	width:305px;
+	height:55px; 
+	outline:none;
+	border:none;
+	font-size:18px;
+	color:#707070;
+	line-height:55px;
+	padding-left:50px;
+}
+
+#password-bg{
+	display:inline-block;
+	background-image:url(../img/password-input.png);
+	background-repeat: no-repeat;
+	width:355px;
+	height:55px; 
+}
+#password{
+	width:305px;
+	height:55px; 
+	outline:none;
+	border:none;
+	font-size:18px;
+	color:#707070;
+	line-height:55px;
+	padding-left:50px;
+}
+.btn-div{
+	display:inline-block;
+	background-image:url(../img/login-btn.png);
+	background-repeat: no-repeat;
+	margin-left:175px;
+	width:172px;
+	height:55px; 
+}
+#login-ok{
+	cursor:pointer;
+	width:170px;
+	height:50px; 
+	border:none;
+}
+#space{
+	display:inline-block;
+	width:24px;
+}
+
+ input：focus{
+    outline:none;
+}
+.loading{
+	position:fixed;
+	_position:absolute;
+	top:30%;
+	left:31%;
+	font-size: 40px;
+	color:#fff;
+}
+.alertMessageBg{
+	position:fixed;
+	_position:absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	background:#000;
+	opacity:0.5;
+	-moz-opacity:0.5;
+	filter:alpha(opacity=50);
+	z-index:97;
+}
+#loading-img{
+	clear:both;
+	position:relative;
+	left:50%;
+	top:50%;
+	margin-left:-50px;
+	display:inline-block;
+	width:100px;
+	height:100px;
+	background-image: url(../img/loading.gif);
+  	background-repeat: no-repeat;
+}

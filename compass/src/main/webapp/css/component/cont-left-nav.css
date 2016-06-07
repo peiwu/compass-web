@@ -1,0 +1,85 @@
+
+/* 左侧一级分类导航样式 */
+.parent-class-split{
+	border: none;
+	border-top: 1px dashed #bdbdbd;
+	width:90%;
+	margin-left:8px;
+}
+.parent-classifies{
+	position:relative;
+	height: 100%;
+	padding-top: 12px;
+}
+.parent-class-item{
+	display:block;
+	position:relative;
+	min-width:80px;
+	margin: 0 auto;
+	height: 47px;
+}
+.parent-class-active{	
+	height: 47px;	
+	background-image:url(../img/parent-class-active.png);
+	background-repeat: no-repeat;
+	background-color:#e2e2e2;
+	background-position:right;
+	border-top:1px solid #d2d4d8;
+	border-bottom:1px solid #d2d4d8;
+	font-weight:bold;
+}
+
+.parent-class-item a{
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 49px;
+	padding-left: 9px;
+	font-size: 14px;
+	color: #333333;
+	min-width:75px;
+	width:50%;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis; 
+	overflow:hidden;
+}
+.parent-class-icon{
+	vertical-align: middle;
+	display: inline-block;
+	 margin-left:25px;  
+	width: 15px;
+	height: 19px;
+	background-image: url(../img/parent-class-icon.png);
+	background-repeat: no-repeat;
+}
+.parent-class-active-icon{
+	vertical-align: middle;
+	display: inline-block;
+	 margin-left:25px;  
+	width: 15px;
+	height: 19px;
+	background-image: url(../img/parent-class-active-icon.png);
+	background-repeat: no-repeat;
+}
+.edit-parent-class{
+	position:absolute;
+	top:17px;
+	right:30px;
+	display:none;
+	width:14px;
+	height:17px;
+	cursor:pointer;
+	background-image: url(../img/edit.png);
+	background-repeat: no-repeat;
+}
+.remove-parent-class{
+	position:absolute;
+	top:17px;
+	right:9px;
+	display:none;
+	width:13px;
+	height:17px;
+	cursor:pointer;
+	background-image: url(../img/trash.png);
+	background-repeat: no-repeat;
+}
